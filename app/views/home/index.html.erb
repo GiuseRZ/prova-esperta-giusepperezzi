@@ -1,0 +1,87 @@
+<div class="min-h-screen w-full flex flex-col bg-[#fefcf8]">
+  <!-- Navbar -->
+  <nav class="bg-[#fdf6e3] text-gray-800 w-full shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <%= image_tag "Creative-Minimalist-Architecture-Logo-Graphics-14840199-1.jpg", class: "h-14 w-auto rounded-md shadow-sm" %>
+        <span class="text-2xl font-bold tracking-tight">Punto Zero</span>
+      </div>
+
+      <!-- Navigation links -->
+      <ul class="hidden md:flex space-x-8 text-sm font-medium">
+        <li><a class="hover:text-pink-600 transition" href="#">Progetti</a></li>
+        <li><a class="hover:text-pink-600 transition" href="#">Servizi</a></li>
+        <li><a class="hover:text-pink-600 transition" href="#">Franca e Allegra</a></li>
+        <li><a class="hover:text-pink-600 transition" href="#">Chi siamo</a></li>
+        <li><a class="hover:text-pink-600 transition" href="#">Press</a></li>
+        <li><a class="hover:text-pink-600 transition" href="#">Contatti</a></li>
+      </ul>
+      <button class="md:hidden block text-gray-600 hover:text-gray-800 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+<!-- Hero con Testo Centrato -->
+<div class="relative w-full h-[800px]">
+  <%= image_tag "Interior-Design-for-Hospitality-Master-Course-IED-Roma.jpg", alt: "Immagine Hero", class: "w-full h-full object-cover" %>
+
+  <!-- Testo centrato -->
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black/50 text-white p-8 max-w-xl rounded-2xl">
+    <h2 class="text-xs uppercase font-bold tracking-wider mb-2">Punto Zero Architettura</h2>
+    <p class="text-2xl font-semibold leading-relaxed mb-4">
+      Con il cuore pulsante a Roma e lo sguardo rivolto al futuro, Punto Zero è uno studio di architettura che trasforma visioni in spazi concreti. Dalla progettazione al design d’interni, affianchiamo privati e aziende con creatività e attenzione alla sostenibilità.
+    </p>
+    <a href="#" class="inline-block mt-2">
+      <button class="flex items-center gap-2 text-white font-semibold uppercase text-sm hover:text-pink-300 transition">
+        Scopri di più
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12l-3.75 3.75M21 12H3"/>
+        </svg>
+      </button>
+    </a>
+  </div>
+</div>
+
+
+
+
+<!-- Sezione Servizi Alternati -->
+<div class="bg-[#fffaf5] py-24 space-y-20">
+  <!-- Card 1 - immagine a sinistra -->
+  <div class="flex flex-col md:flex-row items-center max-w-6xl mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
+    <div class="md:w-1/2">
+      <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1471&q=80" alt="Progettazione Architettonica" class="w-full h-full object-cover">
+    </div>
+    <div class="md:w-1/2 p-10">
+      <h3 class="text-3xl font-semibold text-gray-900 mb-4">Progettazione Architettonica</h3>
+      <p class="text-lg text-gray-700">Diamo forma agli spazi immaginati, combinando estetica e funzionalità. Progettiamo architetture moderne, sostenibili e perfettamente integrate nel contesto urbano e paesaggistico.</p>
+    </div>
+  </div>
+
+  <!-- Card 2 - immagine a destra -->
+  <div class="flex flex-col md:flex-row-reverse items-center max-w-6xl mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
+    <div class="md:w-1/2">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1471&q=80" alt="Interior Design" class="w-full h-full object-cover">
+    </div>
+    <div class="md:w-1/2 p-10">
+      <h3 class="text-3xl font-semibold text-gray-900 mb-4">Interior Design</h3>
+      <p class="text-lg text-gray-700">Progettiamo interni su misura, dove funzionalità ed estetica dialogano con lo stile di vita dei clienti. Ogni dettaglio è studiato per riflettere identità e comfort.</p>
+    </div>
+  </div>
+
+  <!-- Card 3 - immagine a sinistra -->
+  <div class="flex flex-col md:flex-row items-center max-w-6xl mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
+    <div class="md:w-1/2">
+      <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1471&q=80" alt="Ristrutturazioni" class="w-full h-full object-cover">
+    </div>
+    <div class="md:w-1/2 p-10">
+      <h3 class="text-3xl font-semibold text-gray-900 mb-4">Ristrutturazioni</h3>
+      <p class="text-lg text-gray-700">Trasformiamo edifici esistenti rispettando la loro storia. Ogni ristrutturazione migliora l’efficienza e valorizza gli spazi, con una visione contemporanea e sostenibile.</p>
+    </div>
+  </div>
