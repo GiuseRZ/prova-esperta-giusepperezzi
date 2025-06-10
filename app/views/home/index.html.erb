@@ -10,12 +10,12 @@
 
       <!-- Navigation links -->
       <ul class="hidden md:flex space-x-8 text-sm font-medium">
-        <li><a class="hover:text-pink-600 transition" href="#">Progetti</a></li>
-        <li><a class="hover:text-pink-600 transition" href="servizi">Servizi</a></li>
-        <li><a class="hover:text-pink-600 transition" href="#">Franca e Allegra</a></li>
-        <li><a class="hover:text-pink-600 transition" href="#">Chi siamo</a></li>
-        <li><a class="hover:text-pink-600 transition" href="#">Press</a></li>
-        <li><a class="hover:text-pink-600 transition" href="#">Contatti</a></li>
+        <li><a class="hover: transition" href="#">Progetti</a></li>
+        <li><a class="hover: transition" href="servizi">Servizi</a></li>
+        <li><a class="hover: transition" href="#">Franca e Allegra</a></li>
+        <li><a class="hover: transition" href="#">Chi siamo</a></li>
+        <li><a class="hover: transition" href="#">Press</a></li>
+        <li><a class="hover: transition" href="#">Contatti</a></li>
       </ul>
       <button class="md:hidden block text-gray-600 hover:text-gray-800 focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -102,11 +102,20 @@
   </div>
 
 
+   <!-- Titolo e introduzione sezione "I nostri esperti" -->
+<section class="max-w-4xl mx-auto px-6 pb-10 text-center">
+  <h2 class="text-4xl font-bold text-gray-900 mb-4">I nostri esperti</h2>
+  <p class="text-lg font-medium text-gray-700">
+    Un team multidisciplinare che unisce competenze tecniche, creatività e attenzione ai dettagli per offrire soluzioni su misura e sostenibili.
+  </p>
+</section>
+
   
-  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
   <!-- Card 1 -->
   <div class="flex bg-white rounded-2xl shadow-md overflow-hidden">
-  <%= image_tag "3152073-carino-attraente-ragazza-sorridente-su-uno-sfondo-bianco-gratuito-foto.jpg", alt: "Alice Rossi", class: "w-32 h-32 object-cover" %>
+    <%= image_tag "3152073-carino-attraente-ragazza-sorridente-su-uno-sfondo-bianco-gratuito-foto.jpg", alt: "Alice Rossi", class: "w-32 h-32 object-cover" %>
     <div class="p-4">
       <h4 class="text-xl font-semibold text-gray-900">Alice Rossi</h4>
       <p class="text-sm text-gray-600 mb-1"><em>Architetta Senior</em></p>
@@ -116,7 +125,7 @@
 
   <!-- Card 2 -->
   <div class="flex bg-white rounded-2xl shadow-md overflow-hidden">
-  <%= image_tag "uomo.webp", alt: "Marco Bianchi", class: "w-32 h-32 object-cover" %>
+    <%= image_tag "uomo.webp", alt: "Marco Bianchi", class: "w-32 h-32 object-cover" %>
     <div class="p-4">
       <h4 class="text-xl font-semibold text-gray-900">Marco Bianchi</h4>
       <p class="text-sm text-gray-600 mb-1"><em>Interior Designer</em></p>
@@ -133,7 +142,6 @@
       <p class="text-sm text-gray-600">Coordina i progetti con efficienza e attenzione, garantendo qualità e rispetto dei tempi.</p>
     </div>
   </div>
-  
 
   <!-- Card 4 -->
   <div class="flex bg-white rounded-2xl shadow-md overflow-hidden">
@@ -144,18 +152,21 @@
       <p class="text-sm text-gray-600">Integra soluzioni green e tecnologie eco nei progetti, con focus su materiali a basso impatto.</p>
     </div>
   </div>
+
+</div>
+
   
 
   
-<div class="bg-white pt-10 pb-10">
-  <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-6 gap-8">
+<div class="bg-fefcf8">
+  <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-6 gap-8 text-black">
     
     <div class="md:col-span-2">
-      <h3 class="text-[20px] font-bold text-gray-900 tracking-wider mb-4"> <%= 'iscriviti' %> </h3>
-      <p class="text-gray-500 text-sm mb-4"><%= 'sconto' %></p>
+      <h3 class="text-[20px] font-bold text-black tracking-wider mb-4"> <%= 'iscriviti' %> </h3>
+      <p class="text-gray-700 text-sm mb-4"><%= 'sconto' %></p>
       <div class="flex rounded-md shadow-sm w-full">
         <input type="email" class="appearance-none block w-full px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="<%= 'iscriviti' %>">
-        <button type="button" class="bg-gray-800 hover:bg-gray-900 text-white font-medium rounded-r-md px-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <button type="button" class="bg-gray-900 hover:bg-gray-700 text-black font-medium rounded-r-md px-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
           <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
             <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
           </svg>
@@ -164,60 +175,60 @@
     </div>
     
     <div>
-      <h3 class="text-sm font-bold text-gray-900 text-[15px] tracking-wider mb-4"><%= 'assistenza' %></h3>
-      <ul class="text-gray-500 text-sm space-y-2">
-        <li><a href="#" class="hover:text-gray-900"><%= 'informazioni' %></a></li>
-        <li><a href="#" class="hover:text-gray-900"><%= 'world' %></a></li>
-        <li><a href="#" class="hover:text-gray-900"><%= 'shortcuts' %></a></li>
-        <li><a href="#" class="hover:text-gray-900"><%= 'dashborad' %></a></li>
-        <li><a href="#" class="hover:text-gray-900"><%= 'contattaci' %></a></li>
-        <li><a href="#" class="hover:text-gray-900"><%= 'il_tuo_account' %></a></li>
-        <li><a href="#" class="hover:text-gray-900"><%= 'traccia_il_tuo_ordine' %></a></li>
-        <li><a href="#" class="hover:text-gray-900"><%= 'spedizioni_e_consegne' %></a></li>
-        <li><a href="#" class="hover:text-gray-900">Sicurezza prodotto</a></li>
-        <li><a href="#" class="hover:text-gray-900">Avvisi e richiami prodotto</a></li>
+      <h3 class="text-sm font-bold text-black text-[15px] tracking-wider mb-4"><%= 'assistenza' %></h3>
+      <ul class="text-gray-400 text-sm space-y-2">
+        <li><a href="#" class="hover:text-white"> <%= 'informazioni' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'world' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'shortcuts' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'dashborad' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'contattaci' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'il_tuo_account' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'traccia_il_tuo_ordine' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'spedizioni_e_consegne' %> </a></li>
+        <li><a href="#" class="hover:text-white"> Sicurezza prodotto </a></li>
+        <li><a href="#" class="hover:text-white"> Avvisi e richiami prodotto </a></li>
       </ul>
     </div>
 
     <div>
-      <h3 class="text-sm font-bold text-gray-900 text-[15px] tracking-wider mb-4"><%= 'informazioni' %></h3>
-      <ul class="text-gray-500 text-sm space-y-2">
-        <li><a href="#" class="hover:text-gray-900">Guida alle taglie</a></li>
-        <li><a href="#" class="hover:text-gray-900">Lavora con noi</a></li>
-        <li><a href="#" class="hover:text-gray-900">Area Download</a></li>
-        <li><a href="#" class="hover:text-gray-900">Corporate B2B</a></li>
-        <li><a href="#" class="hover:text-gray-900">Store Locator</a></li>
-        <li><a href="#" class="hover:text-gray-900">Dichiarazioni di conformità e Note Informative</a></li>
-        <li><a href="#" class="hover:text-gray-900">Bilanci di Sostenibilità - Archivio</a></li>
+      <h3 class="text-sm font-bold text-white text-[15px] tracking-wider mb-4"><%= 'informazioni' %></h3>
+      <ul class="text-gray-400 text-sm space-y-2">
+        <li><a href="#" class="hover:text-white"> Guida alle taglie </a></li>
+        <li><a href="#" class="hover:text-white"> Lavora con noi </a></li>
+        <li><a href="#" class="hover:text-white"> Area Download </a></li>
+        <li><a href="#" class="hover:text-white"> Corporate B2B </a></li>
+        <li><a href="#" class="hover:text-white"> Store Locator </a></li>
+        <li><a href="#" class="hover:text-white"> Dichiarazioni di conformità e Note Informative </a></li>
+        <li><a href="#" class="hover:text-white"> Bilanci di Sostenibilità - Archivio </a></li>
       </ul>
     </div>
 
     <div>
-      <h3 class="text-sm font-bold text-gray-900 text-[15px] tracking-wider mb-4">World</h3>
-      <ul class="text-gray-500 text-sm space-y-2">
-        <li><a href="#" class="hover:text-gray-900">Culture</a></li>
-        <li><a href="#" class="hover:text-gray-900">Diadora World</a></li>
-        <li><a href="#" class="hover:text-gray-900">Sostenibilità</a></li>
-        <li><a href="#" class="hover:text-gray-900">Tecnologie</a></li>
-        <li><a href="#" class="hover:text-gray-900">Running Shoe Finder</a></li>
-        <li><a href="#" class="hover:text-gray-900">Atleti ed Atlete</a></li>
-        <li><a href="#" class="hover:text-gray-900">Sneaker Agenda</a></li>
+      <h3 class="text-sm font-bold text-white text-[15px] tracking-wider mb-4">World</h3>
+      <ul class="text-gray-400 text-sm space-y-2">
+        <li><a href="#" class="hover:text-white"> Culture </a></li>
+        <li><a href="#" class="hover:text-white"> Diadora World </a></li>
+        <li><a href="#" class="hover:text-white"> Sostenibilità </a></li>
+        <li><a href="#" class="hover:text-white"> Tecnologie </a></li>
+        <li><a href="#" class="hover:text-white"> Running Shoe Finder </a></li>
+        <li><a href="#" class="hover:text-white"> Atleti ed Atlete </a></li>
+        <li><a href="#" class="hover:text-white"> Sneaker Agenda </a></li>
       </ul>
     </div>
 
     <div>
-      <h3 class="text-sm font-bold text-gray-900 text-[15px] tracking-wider mb-4">Shortcuts</h3>
-      <ul class="text-gray-500 text-sm space-y-2">
-        <li><a href="#" class="hover:text-gray-900">Stratouno: capi senza cuciture</a></li>
-        <li><a href="#" class="hover:text-gray-900">Abbigliamento Termico</a></li>
-        <li><a href="#" class="hover:text-gray-900">Scarpe Made in Italy</a></li>
-        <li><a href="#" class="hover:text-gray-900">Scarpe Trail Running</a></li>
-        <li><a href="#" class="hover:text-gray-900">Scarpe Bianche</a></li>
-        <li><a href="#" class="hover:text-gray-900">Scarpe Nere</a></li>
-        <li><a href="#" class="hover:text-gray-900">Equipe</a></li>
-        <li><a href="#" class="hover:text-gray-900">B.560</a></li>
-        <li><a href="#" class="hover:text-gray-900">Mercury</a></li>
-        <li><a href="#" class="hover:text-gray-900">Mythos Propulsion 280</a></li>
+      <h3 class="text-sm font-bold text-white text-[15px] tracking-wider mb-4">Shortcuts</h3>
+      <ul class="text-gray-400 text-sm space-y-2">
+        <li><a href="#" class="hover:text-white"> Stratouno: capi senza cuciture </a></li>
+        <li><a href="#" class="hover:text-white"> Abbigliamento Termico </a></li>
+        <li><a href="#" class="hover:text-white"> Scarpe Made in Italy </a></li>
+        <li><a href="#" class="hover:text-white"> Scarpe Trail Running </a></li>
+        <li><a href="#" class="hover:text-white"> Scarpe Bianche </a></li>
+        <li><a href="#" class="hover:text-white"> Scarpe Nere </a></li>
+        <li><a href="#" class="hover:text-white"> Equipe </a></li>
+        <li><a href="#" class="hover:text-white"> B.560 </a></li>
+        <li><a href="#" class="hover:text-white"> Mercury </a></li>
+        <li><a href="#" class="hover:text-white"> Mythos Propulsion 280 </a></li>
       </ul>
     </div>
 
