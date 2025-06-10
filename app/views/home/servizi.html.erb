@@ -1,6 +1,6 @@
-<div class="min-h-screen w-full flex flex-col bg-[#fefcf8]">
+<div class="min-h-screen w-full flex flex-col bg-[#faebd7]">
   <!-- Navbar -->
-  <nav class="bg-[#fdf6e3] text-gray-800 w-full shadow-sm">
+  <nav class="bg-[#faebd7] text-gray-800 w-full shadow-sm">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <!-- Logo -->
       <div class="flex items-center space-x-4">
@@ -10,12 +10,12 @@
 
       <!-- Navigation links -->
       <ul class="hidden md:flex space-x-8 text-sm font-medium">
-        <li><a class="hover:text-pink-600 transition" href="#">Progetti</a></li>
-        <li><a class="hover:text-pink-600 transition" href="servizi">Servizi</a></li>
-        <li><a class="hover:text-pink-600 transition" href="#">Franca e Allegra</a></li>
-        <li><a class="hover:text-pink-600 transition" href="#">Chi siamo</a></li>
-        <li><a class="hover:text-pink-600 transition" href="#">Press</a></li>
-        <li><a class="hover:text-pink-600 transition" href="#">Contatti</a></li>
+        <li><a class="hover: transition" href="#">Progetti</a></li>
+        <li><a class="hover: transition" href="servizi">Servizi</a></li>
+        <li><a class="hover: transition" href="#">Franca e Allegra</a></li>
+        <li><a class="hover: transition" href="#">Chi siamo</a></li>
+        <li><a class="hover: transition" href="#">Press</a></li>
+        <li><a class="hover: transition" href="#">Contatti</a></li>
       </ul>
       <button class="md:hidden block text-gray-600 hover:text-gray-800 focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -26,3 +26,196 @@
       </button>
     </div>
   </nav>
+
+
+
+
+
+
+<section class="bg-white py-16 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">I nostri Servizi</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden">
+        <%= image_tag 'progettazione-architettonica.webp', alt: 'Progettazione architettonica', class: "w-full h-48 object-cover" %>
+        <div class="p-8">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Progettazione architettonica</h3>
+          <p class="text-gray-600">Soluzioni su misura, sostenibili e innovative per ogni progetto architettonico.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden">
+        <%= image_tag 'interior-designer.jpg', alt: 'Interior Design', class: "w-full h-48 object-cover" %>
+        <div class="p-8">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Interior Design</h3>
+          <p class="text-gray-600">Spazi interni pensati per comfort, estetica e funzionalità quotidiana.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden">
+        <%= image_tag 'ristrutturazioni.jpg', alt: 'Ristrutturazioni', class: "w-full h-48 object-cover" %>
+        <div class="p-8">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Ristrutturazioni</h3>
+          <p class="text-gray-600">Rigeneriamo ambienti mantenendo la loro anima, con uno sguardo al futuro.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden">
+        <%= image_tag 'consulenza.webp', alt: 'Consulenze personalizzate', class: "w-full h-48 object-cover" %>
+        <div class="p-8">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Consulenze personalizzate</h3>
+          <p class="text-gray-600">Affiancamento completo, dalla prima idea alla realizzazione dell'opera.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10">Perché scegliere Punto Zero</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-xl shadow-md hover:shadow-lg transition bg-[#fdf6e3]">
+        <svg class="w-10 h-10 mx-auto text-[#bfa87d]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M12 4v16m8-8H4" />
+        </svg>
+        <h3 class="mt-4 text-lg font-semibold text-gray-700">Design su Misura</h3>
+        <p class="text-gray-500 text-sm mt-2">Progetti cuciti sulle tue esigenze, funzionali ed esteticamente coerenti.</p>
+      </div>
+
+      <div class="p-6 rounded-xl shadow-md hover:shadow-lg transition bg-[#fdf6e3]">
+        <svg class="w-10 h-10 mx-auto text-[#bfa87d]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M3 10h18M3 14h18" />
+        </svg>
+        <h3 class="mt-4 text-lg font-semibold text-gray-700">Sostenibilità</h3>
+        <p class="text-gray-500 text-sm mt-2">Utilizziamo materiali eco-friendly e approcci sostenibili in ogni progetto.</p>
+      </div>
+
+      <div class="p-6 rounded-xl shadow-md hover:shadow-lg transition bg-[#fdf6e3]">
+        <svg class="w-10 h-10 mx-auto text-[#bfa87d]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M12 6v6l4 2" />
+        </svg>
+        <h3 class="mt-4 text-lg font-semibold text-gray-700">Esperienza & Competenza</h3>
+        <p class="text-gray-500 text-sm mt-2">Un team di professionisti con anni di esperienza nel settore.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="bg-[#fefcf8] py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Domande Frequenti</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-lg font-semibold text-gray-700">Quanto tempo serve per realizzare un progetto?</h3>
+        <p class="text-gray-500 text-sm mt-2">Dipende dalla complessità, ma forniamo sempre un cronoprogramma preciso con ogni preventivo.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-gray-700">Offrite consulenze iniziali gratuite?</h3>
+        <p class="text-gray-500 text-sm mt-2">Sì, la prima consulenza conoscitiva è sempre gratuita e senza impegno.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-gray-700">Potete seguire anche la direzione lavori?</h3>
+        <p class="text-gray-500 text-sm mt-2">Certamente. Offriamo un servizio completo dalla progettazione alla realizzazione.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="bg-[#fdf6e3] py-12">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Hai un’idea o un progetto?</h2>
+    <p class="text-gray-600 mb-6">Parlaci della tua visione, ti aiutiamo a renderla realtà.</p>
+    <a href="/contatti" class="inline-block bg-[#bfa87d] text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-[#a58f6e] transition">
+      Prenota una consulenza gratuita
+    </a>
+  </div>
+</section>
+
+
+
+
+
+
+
+  <div class="bg-[#faebd7]">
+  <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-6 gap-8 text-black">
+    
+    <div class="md:col-span-2">
+      <h3 class="text-[20px] font-bold text-black tracking-wider mb-4"> <%= 'iscriviti' %> </h3>
+      <p class="text-gray-700 text-sm mb-4"><%= 'sconto' %></p>
+      <div class="flex rounded-md shadow-sm w-full">
+        <input type="email" class="appearance-none block w-full px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="<%= 'iscriviti' %>">
+        <button type="button" class="bg-gray-900 hover:bg-gray-700 text-black font-medium rounded-r-md px-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <div>
+      <h3 class="text-sm font-bold text-black text-[15px] tracking-wider mb-4"><%= 'assistenza' %></h3>
+      <ul class="text-gray-400 text-sm space-y-2">
+        <li><a href="#" class="hover:text-white"> <%= 'informazioni' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'world' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'shortcuts' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'dashborad' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'contattaci' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'il_tuo_account' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'traccia_il_tuo_ordine' %> </a></li>
+        <li><a href="#" class="hover:text-white"> <%= 'spedizioni_e_consegne' %> </a></li>
+        <li><a href="#" class="hover:text-white"> Sicurezza prodotto </a></li>
+        <li><a href="#" class="hover:text-white"> Avvisi e richiami prodotto </a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-sm font-bold text-white text-[15px] tracking-wider mb-4"><%= 'informazioni' %></h3>
+      <ul class="text-gray-400 text-sm space-y-2">
+        <li><a href="#" class="hover:text-white"> Guida alle taglie </a></li>
+        <li><a href="#" class="hover:text-white"> Lavora con noi </a></li>
+        <li><a href="#" class="hover:text-white"> Area Download </a></li>
+        <li><a href="#" class="hover:text-white"> Corporate B2B </a></li>
+        <li><a href="#" class="hover:text-white"> Store Locator </a></li>
+        <li><a href="#" class="hover:text-white"> Dichiarazioni di conformità e Note Informative </a></li>
+        <li><a href="#" class="hover:text-white"> Bilanci di Sostenibilità - Archivio </a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-sm font-bold text-white text-[15px] tracking-wider mb-4">World</h3>
+      <ul class="text-gray-400 text-sm space-y-2">
+        <li><a href="#" class="hover:text-white"> Culture </a></li>
+        <li><a href="#" class="hover:text-white"> Diadora World </a></li>
+        <li><a href="#" class="hover:text-white"> Sostenibilità </a></li>
+        <li><a href="#" class="hover:text-white"> Tecnologie </a></li>
+        <li><a href="#" class="hover:text-white"> Running Shoe Finder </a></li>
+        <li><a href="#" class="hover:text-white"> Atleti ed Atlete </a></li>
+        <li><a href="#" class="hover:text-white"> Sneaker Agenda </a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-sm font-bold text-white text-[15px] tracking-wider mb-4">Shortcuts</h3>
+      <ul class="text-gray-400 text-sm space-y-2">
+        <li><a href="#" class="hover:text-white"> Stratouno: capi senza cuciture </a></li>
+        <li><a href="#" class="hover:text-white"> Abbigliamento Termico </a></li>
+        <li><a href="#" class="hover:text-white"> Scarpe Made in Italy </a></li>
+        <li><a href="#" class="hover:text-white"> Scarpe Trail Running </a></li>
+        <li><a href="#" class="hover:text-white"> Scarpe Bianche </a></li>
+        <li><a href="#" class="hover:text-white"> Scarpe Nere </a></li>
+        <li><a href="#" class="hover:text-white"> Equipe </a></li>
+        <li><a href="#" class="hover:text-white"> B.560 </a></li>
+        <li><a href="#" class="hover:text-white"> Mercury </a></li>
+        <li><a href="#" class="hover:text-white"> Mythos Propulsion 280 </a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
